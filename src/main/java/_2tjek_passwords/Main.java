@@ -7,7 +7,7 @@ public class Main {
 
         PasswordValidator pv = new PasswordValidator(4,20,true, true,true);
 
-        String password = "IDERP3222d";
+        String password = "IDERP3222De";
 
         System.out.println("Is password valid: " + pv.isValid(password));
 

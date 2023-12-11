@@ -1,8 +1,8 @@
 package _2tjek_passwords;
 
 public class PasswordValidator {
-    private int minLength;
-    private int maxLength;
+    private final int minLength;
+    private final int maxLength;
     private boolean numbersRequired;
     private boolean isUppercase;
     private boolean isLowercase;
@@ -47,9 +47,6 @@ public class PasswordValidator {
             }
         }
 
-        if (password.length() > minLength && password.length() < maxLength && numbersRequired && isUppercase && isLowercase){
-            return true;
-        }
-        return false;
+        return password.length() > minLength && password.length() < maxLength && numbersRequired && isUppercase && isLowercase;
     }
 }
