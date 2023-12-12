@@ -2,10 +2,18 @@ package _7eksamensbevis;
 
 public class Main {
 
-    Diploma diploma = new Diploma("Ømer");
+    public static void main (String [] args) {
 
-    Course english = new Course("English",7);
-    Course math = new Course("Math", 10);
+        Diploma diploma = new Diploma("Ømer");
+
+        Course english = new Course("English", "10");
+        Course math = new Course("Math", "7");
+
+        diploma.addCourse(english);
+        diploma.addCourse(math);
+
+        System.out.println(diploma);
 
 
+    }
 }

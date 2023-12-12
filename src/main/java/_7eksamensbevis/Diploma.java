@@ -18,11 +18,13 @@ public class Diploma {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Studerende: ").append(studentName).append(" ");
+        sb.append("Studerende: ").append(studentName).append("\n");
         for (Course c : courses) {
             sb.append("Kursus: ").append(c.getCourseName());
-            sb.append("Karakter: ").append(c.getGrade());
+            sb.append(" Karakter: ").append(c.getGrade()).append("\n");
         }
         return sb.toString();
     }
+
+
 }
