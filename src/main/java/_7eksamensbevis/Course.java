@@ -30,6 +30,6 @@ public class Course {
     }
 
     public String toString() {
-        return "Kursusnavn: " + courseName + " Karakter: " + grade;
+        return "Course: " + courseName + " Grade: " + grade;
     }
 }
