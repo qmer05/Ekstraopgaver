@@ -43,8 +43,9 @@ public class Cities {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (City c : cities) {
-            sb.append(c + "\n");
+            sb.append(c).append("\n");
         }
         return sb.toString();
     }
+
 }

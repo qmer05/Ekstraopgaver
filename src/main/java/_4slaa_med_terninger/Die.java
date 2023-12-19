@@ -3,7 +3,7 @@ package _4slaa_med_terninger;
 import java.util.Random;
 
 public class Die {
-    private int sides;
+    private final int sides;
 
     public Die(int sides) {
         this.sides = sides;
